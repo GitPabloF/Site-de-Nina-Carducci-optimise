@@ -3,8 +3,12 @@
 <html lang="fr">
 
 <head>
-    <link rel="preload" as="style" rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>      
+    <meta charset="UTF-8">
+    <link rel="preload" as="style" href="./assets/bootstrap/bootstrap.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
     <link rel="stylesheet" href="./assets/style-min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +23,7 @@
 
     <!-- Ajout de la balise meta description + regroupement des balises meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+    
     <meta name="description"
         content="Découvrez les services de photographie professionnelle de Nina Carducci. Capturant les moments précieux pour créer des souvenirs inoubliables.">
 
@@ -57,7 +61,7 @@
     </header>
 
     <!-- div -> section -->
-    <section id="carousel">
+    <div id="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -71,23 +75,34 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <picture>
-                        <source media="(max-width: 650px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-small.webp" type="image/webp">
+                        <source media="(max-width: 650px)"
+                            srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-small.webp"
+                            type="image/webp">
                         <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" type="image/webp">
-                        <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" loading="eager" class="d-block w-100" alt="A man crossing street">
+                        <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" loading="eager"
+                            class="d-block w-100" alt="A man crossing street">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source media="(max-width: 650px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-small.webp" type="image/webp">
-                        <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" type="image/webp">
-                        <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" loading="lazy" class="d-block w-100" alt="Crowed in concert">
+                        <source media="(max-width: 650px)"
+                            srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-small.webp"
+                            type="image/webp">
+                        <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+                            type="image/webp">
+                        <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" loading="lazy"
+                            class="d-block w-100" alt="Crowed in concert">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source media="(max-width: 650px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-small.webp" type="image/webp">
-                        <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" type="image/webp">
-                        <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" loading="lazy" class="d-block w-100" alt="A couple married kissing">
+                        <source media="(max-width: 650px)"
+                            srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-small.webp"
+                            type="image/webp">
+                        <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+                            type="image/webp">
+                        <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" loading="lazy"
+                            class="d-block w-100" alt="A couple married kissing">
                     </picture>
                 </div>
             </div>
@@ -103,8 +118,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </section>
-
+    </div>
     <!-- div -> section -->
     <section id="about">
         <div class="picture left">
@@ -124,6 +138,7 @@
                 travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez
                 y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux
                 sur vos photos.</p>
+        </div>
     </section>
     <!-- div -> section -->
     <section id="gallery">
@@ -176,7 +191,7 @@
 
     <!-- div -> section -->
     <section id="services">
-        <h2>Mes services</h3>
+        <h2>Mes services</h2>
             <div class="container">
 
                 <div class="service">
@@ -235,7 +250,7 @@
                 <h2>Une question ? Une demande de devis ?</h2>
                 <p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
                 <!-- ajour de l'attribut 'for' pour label -->
-                <form action="" method="post">
+                <form action="#" method="post">
                     <label for="nom">Nom</label>
                     <input type="text" name="nom" id="nom">
 
@@ -252,10 +267,11 @@
                         <address> <span>Adresse :</span><br>
                             68 avenue Alsace-Lorraine,33200 Bordeaux
                         </address>
-                        <p> <span>Téléphone :</span><br> 
-                        <a href="tel:0556677889">05.56.67.78.89</a></p>
+                        <p> <span>Téléphone :</span><br>
+                            <a href="tel:0556677889">05.56.67.78.89</a>
+                        </p>
                         <p><span>Horaires d'ouverture</span> <br>
-                        Lundi au vendredi de 10 h à 19 h
+                            Lundi au vendredi de 10 h à 19 h
                         </p>
                     </div>
                 </form>
@@ -328,10 +344,11 @@
           "url": "https://nina-carducci.github.io/"
         }
         </script>
-        <script src="./assets/bootstrap/bootstrap.bundle.min.js" ></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
-        <script src="./assets/scripts.js" ></script>
-        <script src="./assets/maugallery-min.js" ></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts.js"></script>
+    <script src="./assets/maugallery-min.js"></script>
 </body>
 
 </html>
